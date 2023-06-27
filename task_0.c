@@ -91,7 +91,7 @@ void convert_fmt_s(va_list *args_list, fmt_info_t *fmt_info)
 		? fmt_info->prec : str_len(str);
 	if (!fmt_info->left)
 	{
-		for (z = 0; z < MAX(len, fmt_info->width) - len; i++)
+		for (z = 0; z < MAX(len, fmt_info->width) - len; z++)
 			_putchar(' ');
 	}
 	for (z = 0; z < len && *(str + z) != '\0'; z++)
